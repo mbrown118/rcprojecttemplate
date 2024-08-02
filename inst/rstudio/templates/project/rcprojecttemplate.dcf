@@ -1,9 +1,6 @@
-Binding: create_project
+Binding: create_rc_project
 Title: RC Project Template
-OpenFiles: README.md
-# In the project you can also add icons (the icon should be a PNG, smaller than 64kb
-# and in the inst/rstudio/templates folder
-Icon: template_icon.png
+Icon: RCAvatar.png
 
 Parameter: folder
 Widget: SelectInput

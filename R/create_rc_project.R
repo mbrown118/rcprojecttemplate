@@ -1,6 +1,6 @@
 #' This package will create a function called create_rc_project()
 #'
-#' It's callback is at: inst/rstudio/templates/project/create_rc_project.dcf
+#' It's callback is at: inst/rstudio/templates/project/rcprojecttemplate.dcf
 #'
 #' @export
 
@@ -36,11 +36,9 @@ create_rc_project <-
       writeLines(paste(git_ignores, sep = '\n'), '.gitignore')
     }
 
-    # Check selected folder
-    if(dots[["folder"]] == "Production"){
-      dir.create("production", recursive = TRUE, showWarnings = FALSE)
-    } else {
-      dir.create("development", recursive = TRUE, showWarnings = FALSE)
-    }
+
+    file.create("data_clearning.r")
+
+
 
   }
